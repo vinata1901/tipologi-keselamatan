@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahtera Nuh & Keselamatan dalam Kristus</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Menggunakan font Inter untuk tampilan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Definisi tema Light Mode (Default) */
+            --color-bg-primary: #f8f8f8;
+            --color-bg-secondary: #ffffff;
+            --color-text-primary: #1f2937;
+            --color-text-secondary: #4b5563;
+            --color-accent: #3b82f6; /* Blue 500 */
+        }
+
+        .dark-mode {
+            /* Definisi tema Dark Mode */
+            --color-bg-primary: #111827; /* Gray 900 */
+            --color-bg-secondary: #1f2937; /* Gray 800 */
+            --color-text-primary: #f9fafb; /* White */
+            --color-text-secondary: #9ca3af; /* Gray 400 */
+            --color-accent: #60a5fa; /* Blue 400 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .card {
+            background-color: var(--color-bg-secondary);
+            border-color: var(--color-bg-primary); /* Untuk border yang lebih lembut */
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .section-header {
+            color: var(--color-accent);
+        }
+
+        /* Styling untuk tombol Toggle */
+        #theme-toggle {
+            cursor: pointer;
+            outline: none;
+            transition: transform 0.3s ease;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Menggunakan class 'dark-mode' pada <html> atau <body>
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': 'var(--color-bg-primary)',
+                        'secondary-bg': 'var(--color-bg-secondary)',
+                        'primary-text': 'var(--color-text-primary)',
+                        'secondary-text': 'var(--color-text-secondary)',
+                        'accent-color': 'var(--color-accent)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Dark Mode Toggle -->
+    <header class="sticky top-0 z-50 shadow-md p-4" style="background-color: var(--color-bg-secondary);">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold text-accent-color">Tipologi Keselamatan</h1>
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark-mode:hover:bg-gray-700 focus:ring-4 focus:ring-accent-color/50 transition">
+                <!-- Sun Icon (Light Mode) -->
+                <svg id="sun-icon" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <!-- Moon Icon (Dark Mode) -->
+                <svg id="moon-icon" class="h-6 w-6 text-gray-400 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-12">
+
+        <!-- Hero Section -->
+        <section class="text-center mb-16 p-8 rounded-xl shadow-lg card">
+            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4" style="color: var(--color-text-primary);">
+                Hubungan antara Bahtera Nuh dan Keselamatan dalam Kristus
+            </h2>
+            <p class="text-lg text-secondary-text max-w-3xl mx-auto">
+                Dalam Ilmu Teologi, "Tipologi" adalah studi tentang bagaimana orang, peristiwa, atau benda di Perjanjian Lama (Bayangan) menubuatkan atau menggambarkan realitas yang lebih besar di Perjanjian Baru (Wujud Nyata).
+            </p>
+        </section>
+
+        <!-- Parallel Points Section -->
+        <section class="space-y-16">
+            
+            <!-- Point 1: Hanya Ada Satu Jalan Keselamatan -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">1. Hanya Ada Satu Jalan Keselamatan</h3>
+                <!-- Placeholder Gambar 1 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_01.png" width="1200" height="600" 
+                     alt="Ilustrasi Tipologi Keselamatan: Bahtera Nuh dan Salib" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Bahtera Nuh</h4>
+                        <p class="text-secondary-text">Pada zaman Nuh, hanya ada satu bahtera yang disediakan Allah untuk selamat dari air bah, meskipun banyak cara lain yang mungkin dicoba manusia untuk bertahan hidup.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Yesus Kristus</h4>
+                        <p class="text-secondary-text">Alkitab menegaskan bahwa keselamatan hanya ada di dalam satu pribadi, Yesus Kristus. Tidak ada jalan alternatif menuju Bapa selain melalui Dia.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: Kisah Para Rasul 4:12 – "Dan keselamatan tidak ada di dalam siapa pun juga selain di dalam Dia..."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 2: Material Kayu (Salib) -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">2. Material Kayu (Salib)</h3>
+                <!-- Placeholder Gambar 2 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_02.png" width="1200" height="600" 
+                     alt="Ilustrasi Material Kayu: Penebangan Kayu Bahtera dan Kayu Salib" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Bahtera Nuh</h4>
+                        <p class="text-secondary-text">Bahtera terbuat dari kayu gofir yang harus "dikorbankan" (ditebang) untuk menjadi alat penyelamat fisik.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Yesus Kristus</h4>
+                        <p class="text-secondary-text">Keselamatan rohani kita dikerjakan di atas kayu salib. Yesus digantung pada kayu untuk menanggung hukuman dosa kita.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: 1 Petrus 2:24 – "Ia sendiri telah memikul dosa kita di dalam tubuh-Nya di kayu salib..."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 3: Pintu Satu-Satunya -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">3. Pintu Satu-Satunya</h3>
+                <!-- Placeholder Gambar 3 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_03.png" width="1200" height="600"  
+                     alt="Ilustrasi Pintu Bahtera Nuh dan Yesus sebagai Pintu" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Bahtera Nuh</h4>
+                        <p class="text-secondary-text">Tuhan memerintahkan Nuh untuk membuat hanya satu pintu pada lambung bahtera. Semua harus masuk melalui pintu yang satu itu.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Yesus Kristus</h4>
+                        <p class="text-secondary-text">Yesus secara eksplisit menyebut diri-Nya sebagai Pintu, satu-satunya jalan masuk spiritual untuk keselamatan kekal.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: Yohanes 10:9 – "Akulah pintu; barangsiapa masuk melalui Aku, ia akan selamat..."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 4: Keamanan di Dalam (Konsep "Di Dalam Kristus") -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">4. Keamanan di Dalam (Konsep "Di Dalam Kristus")</h3>
+                <!-- Placeholder Gambar 4 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_04.png" width="1200" height="600"  
+                     alt="Ilustrasi Keamanan: Nuh di Bahtera vs. Orang Percaya Di Dalam Kristus" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Bahtera Nuh</h4>
+                        <p class="text-secondary-text">Nuh selamat karena dia berada **di dalam** bahtera. Air penghukuman memukul bahtera, bukan Nuh. Dia aman dan kering di dalam.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Yesus Kristus</h4>
+                        <p class="text-secondary-text">Konsep "Di dalam Kristus" (In Christ): Penghukuman Allah atas dosa ditimpakan kepada Yesus di kayu salib, bukan kepada kita. Kita aman karena tersembunyi di dalam Dia.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: Roma 8:1 – "Demikianlah sekarang tidak ada penghukuman bagi mereka yang ada di dalam Kristus Yesus."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 5: Tuhan Allah yang Menutup Pintu -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">5. Tuhan Allah yang Menutup Pintu (The Divine Seal)</h3>
+                <!-- Placeholder Gambar 5 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_05.png" width="1200" height="600"  
+                     alt="Ilustrasi Meterai Ilahi: Tuhan Menutup Pintu Bahtera dan Roh Kudus Memeteraikan" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Bahtera Nuh</h4>
+                        <p class="text-secondary-text">Setelah Nuh masuk, "TUHAN menutup pintu" bahtera (Kejadian 7:16). Keamanan mereka dijamin oleh Allah, bukan kekuatan Nuh mengunci pintu.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Yesus Kristus</h4>
+                        <p class="text-secondary-text">Keselamatan kita dimeteraikan oleh Allah sendiri melalui Roh Kudus. Keamanan keselamatan kita bergantung pada Allah yang memegang kita.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: Efesus 1:13 – "...kamu dimeteraikan dengan Roh Kudus yang dijanjikan-Nya itu."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Point 6: Melalui Air (Kematian dan Kebangkitan) -->
+            <div class="card p-6 md:p-10 rounded-xl shadow-xl border-t-4 border-accent-color">
+                <h3 class="section-header text-2xl font-bold mb-3">6. Melalui Air (Kematian dan Kebangkitan)</h3>
+                <!-- Placeholder Gambar 6 -->
+                <img src="https://www.gcsteknik.com/png1122/hubungan_bahtera_nuh_dgn_kristus_06.png" width="1200" height="600"  
+                     alt="Ilustrasi Melalui Air: Air Bah dan Baptisan" 
+                     class="w-full h-auto rounded-lg shadow-lg mb-8 mx-auto"
+                     loading="lazy">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Air Bah</h4>
+                        <p class="text-secondary-text">Air Bah melambangkan penghukuman dan kematian. Bahtera membawa Nuh melewati air kematian itu menuju dunia yang baru dan bersih.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Baptisan</h4>
+                        <p class="text-secondary-text">Baptisan melambangkan kita masuk ke dalam kematian Kristus (tenggelam) dan bangkit (keluar dari air) sebagai ciptaan baru dengan hati nurani yang dibersihkan.</p>
+                        <p class="mt-3 text-sm font-medium italic text-gray-500 dark-mode:text-gray-400">Ref: 1 Petrus 3:21</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Table Section -->
+        <section class="mt-16 p-8 rounded-xl shadow-lg card">
+            <h3 class="text-3xl font-bold mb-6 text-center" style="color: var(--color-text-primary);">Tabel Ringkasan Tipologi</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto border-separate border-spacing-y-2">
+                    <thead class="text-xs uppercase text-gray-600 dark-mode:text-gray-400 border-b-2" style="border-color: var(--color-bg-primary);">
+                        <tr class="text-left">
+                            <th class="py-4 px-4 font-semibold">Fitur</th>
+                            <th class="py-4 px-4 font-semibold">Bahtera Nuh (Bayangan)</th>
+                            <th class="py-4 px-4 font-semibold">Yesus Kristus (Wujud Nyata)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows from the document -->
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Penyebab</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Dosa manusia yang besar</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Dosa seluruh umat manusia</td>
+                        </tr>
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Inisiatif</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Rencana Allah (bukan ide Nuh)</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Rencana Allah Bapa</td>
+                        </tr>
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Jumlah</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Hanya 1 Bahtera</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Hanya 1 Juruselamat</td>
+                        </tr>
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Akses</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">1 Pintu</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Yesus adalah Pintu</td>
+                        </tr>
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Undangan</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">"Masuklah ke dalam..." (Kej 7:1)</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">"Marilah kepada-Ku..." (Mat 11:28)</td>
+                        </tr>
+                        <tr class="card rounded-lg shadow-sm">
+                            <td class="py-4 px-4 font-medium" style="background-color: var(--color-bg-secondary);">Hasil</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Selamat dari air bah</td>
+                            <td class="py-4 px-4 text-secondary-text" style="background-color: var(--color-bg-secondary);">Selamat dari murka Allah</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Conclusion Section -->
+        <section class="mt-16 text-center p-8 rounded-xl shadow-2xl card border-t-4 border-accent-color">
+            <h3 class="text-3xl font-extrabold mb-4 section-header">Kesimpulan</h3>
+            <p class="text-xl text-secondary-text max-w-4xl mx-auto">
+                Kisah Nuh bukan sekadar cerita anak-anak tentang kebun binatang terapung. Itu adalah "<b>cetak biru (blueprint) keselamatan</b>" yang Allah berikan ribuan tahun sebelum Yesus lahir, untuk menunjukkan bahwa Allah selalu menyediakan sarana keselamatan di tengah ancaman penghukuman.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-12 py-6 text-center text-sm text-secondary-text" style="background-color: var(--color-bg-secondary);">
+        <p>&copy; 2025 Tipologi Keselamatan. Konten berdasarkan studi Tipologi Perjanjian Lama dan Baru.</p>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+
+        // Fungsi untuk menerapkan tema
+        function applyTheme(isDark) {
+            if (isDark) {
+                body.classList.add('dark-mode');
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+                // Simpan preferensi pengguna
+                localStorage.setItem('theme', 'dark');
+            } else {
+                body.classList.remove('dark-mode');
+                sunIcon.classList.remove('hidden');
+                moonIcon.classList.add('hidden');
+                // Simpan preferensi pengguna
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // 1. Cek Preferensi Tersimpan (localStorage)
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme === 'dark');
+        } else {
+            // 2. Cek Preferensi Sistem
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(prefersDark);
+        }
+
+        // Event listener untuk tombol toggle
+        themeToggle.addEventListener('click', () => {
+            const isDark = body.classList.toggle('dark-mode');
+            applyTheme(isDark);
+        });
+    </script>
+</body>
+</html>
